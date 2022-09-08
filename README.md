@@ -13,7 +13,6 @@ The Sample project includes
 ### Current Issues
 - it seems the the current version of mono only includes Roslyn 3.x compiler, but source generators require 4.x
   This only fails using msbuild though. The .NET 6 Test project builds just fine
-- the paths-ignore doesn't seem to be ignoring changes to md files
 
 ### External Links
 [Official Github Documentation](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-xamarin-applications)
