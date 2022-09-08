@@ -15,5 +15,5 @@ The Sample project includes
   This only fails using msbuild though. The .NET 6 Test project builds just fine
 
 ### External Links
-(Official Github Documentation)[https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-xamarin-applications]
+[Official Github Documentation](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-xamarin-applications)
 (Basic Quickstart)[https://levelup.gitconnected.com/using-github-actions-with-ios-and-android-xamarin-apps-693a93b48a61]
