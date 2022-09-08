@@ -20,7 +20,7 @@ namespace App1.Test
 			_viewModel.InitNameCommand.Execute(name);
 
 			// Assert
-			Assert.AreEqual(name, _viewModel.Name, "Expected name to be set");
+			Assert.That(_viewModel.Name, Is.EqualTo(name), "Expected name to be set");
 		}
 	}
 }
