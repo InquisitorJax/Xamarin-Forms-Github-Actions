@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/XamFormsGithubActions/.vs/XamFormsGithubActions
+/XamFormsGithubActions/App1/App1/bin/Debug/netstandard2.0
+/XamFormsGithubActions/App1/App1/obj
+/XamFormsGithubActions/App1/App1.Android/obj
+/XamFormsGithubActions/App1/App1.Android/App1.Android.csproj.user
+/XamFormsGithubActions/App1/App1.iOS/obj
+/XamFormsGithubActions/App1.Test/bin/Debug/net6.0
+/XamFormsGithubActions/App1.Test/obj
+/XamFormsGithubActions/App1/App1.iOS/bin/iPhoneSimulator/Debug
