@@ -16,4 +16,4 @@ The Sample project includes
 
 ### External Links
 [Official Github Documentation](https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-xamarin-applications)
-(Basic Quickstart)[https://levelup.gitconnected.com/using-github-actions-with-ios-and-android-xamarin-apps-693a93b48a61]
+[Basic Quickstart](https://levelup.gitconnected.com/using-github-actions-with-ios-and-android-xamarin-apps-693a93b48a61)
