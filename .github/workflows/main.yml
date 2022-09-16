@@ -21,18 +21,13 @@ jobs:
       run: nuget restore XamFormsGithubActions/XamFormsGithubActions.NoTest.sln
 
     - name: Android Build
-      run: dotnet build XamFormsGithubActions/App1/App1.Android/App1.Android.csproj /verbosity:normal /t:Rebuild /p:Configuration=Release
+      run: dotnet build XamFormsGithubActions/App1/App1.Android/App1.Android.csproj -t:clean -p:Configuration=Release
         
   iOS:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v3
     
-    - name: Setup dotnet 6
-      uses: actions/setup-dotnet@v2
-      with:
-        dotnet-version: '6.0.x'   
-        
     - name: Install dependencies
       run: nuget restore XamFormsGithubActions/XamFormsGithubActions.NoTest.sln
           
