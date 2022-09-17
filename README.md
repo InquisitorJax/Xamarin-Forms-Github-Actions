@@ -1,4 +1,4 @@
-# Xamarin Forms: Github Actions DEMO (incl. CommunityToolkit.MVVM source generators + .NET 5 NUnit Test run)
+# Xamarin Forms: Github Actions DEMO (incl. CommunityToolkit.MVVM source generators + .NET 6 NUnit Test run)
 
 Sample project that demonstrates using github actions to run CI builds whenever a commit is pushed to main, or a pull request happens
 
