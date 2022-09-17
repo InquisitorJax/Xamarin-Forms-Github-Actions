@@ -8,9 +8,14 @@ The Sample project includes
 - .NET 6 NUnit Test project
 
 ### Getting it to run
-- we need a dedicated solution file that doesn't include the test project when retoring nugets for the mobile projects, else build fails looking for .NET 6.x SDK (even if it's installed by an action command)
+1) we need a dedicated solution file that doesn't include the test project when retoring nugets for the mobile projects, else build fails looking for .NET 6.x SDK (even if it's installed by an action command)
+2) copied the Release build configuration to a new 'GitHubActions' build configuration, and then edited the CSharp.targets import to be included to be able to build on both local machine and CI builds:
+// the import that works for VS on local machine
+ <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets"  Condition="'$(Configuration)'=='Debug' Or '$(Configuration)'=='Release'" />
+// the import that works when run on Github Action build machine
+  <Import Project="/Library/Frameworks/Xamarin.iOS.framework/Versions/Current/lib/msbuild/iOS/Xamarin.iOS.CSharp.targets" Condition="'$(Configuration)'=='GitHubActions'"/>
 
-### Current Issues
+### Current Issues - see item 2) above for work-around
 - it seems the the current version of mono only includes Roslyn 3.x compiler, but source generators require 4.x
   This only fails using msbuild though. The .NET 6 Test project builds just fine [link](https://github.com/actions/runner-images/issues/5782)
 
